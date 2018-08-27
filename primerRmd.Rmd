@@ -1,0 +1,23 @@
+---
+title: "primerRmd"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Simulo datos
+
+```{r,echo=FALSE}
+N=rpois(1,90)
+y=runif(N)
+x=runif(N)  
+datos=data.frame(x,y)
+library(knitr)
+```
+
+```{r,echo=FALSE}
+kable(summary(datos))
+```
+
